@@ -37,3 +37,17 @@ devtools::check()
 devtools::install()
 
 is_leap(1000)
+
+# 2025-04-03
+
+usethis::use_pkgdown()
+pkgdown::build_site()
+
+usethis::use_github_action_check_standard()
+
+usethis::use_pkgdown_github_pages()
+
+install.packages("covr")
+covr::report()
+
+usethis::use_github_action()
